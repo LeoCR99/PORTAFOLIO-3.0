@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Space+Mono&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+:root{
+    --c1:#1086e8;
+    --l1:'Space Mono', monospace;
+    --l2:'Dongle', sans-serif;
+}
+.caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.estilo_fondo{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.oculto1{
+    top: 50px;
+    opacity: 0;
+}
+.oculto2{
+    left: -50px;
+    opacity: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Ffondo_html.jpg?alt=media&token=2dbafc4e-5fd5-4290-81ab-8f08da912cb8");
+    font-family: var(--l1);
+    color: #FFF;
+}
+
+
+/*pagina principal*/
+#pagina_principal{
+    flex-direction: column;
+    width: 98vw;
+    height: 100vh;
+}
+#menu{
+    z-index: 5;
+    top: 0;
+    left: 0;
+    position: fixed;
+    flex-direction: column;
+    margin: 0 20px;
+    width: 80px;
+    height: 100vh;
+}
+#img_icono{
+    margin-bottom:50px;
+}
+#menu a:link , a:visited{
+    position: relative;
+    color: var(--c1);
+    text-decoration: none;
+    font-family: var(--l1);
+    font-size: 18px;
+    margin: 10px 0;
+    transition: all .5s;
+}
+#menu a > span{
+    position: absolute;
+    font-size: 13px;
+    overflow: hidden;
+    width: 0;
+    background-color: var(--c1);
+    border-radius: 5px;
+    transition: all .5s;
+}
+#menu a:hover > span{
+    color: #fff;
+    text-align: center;
+    width: 450%;
+}
+#seccion_cv{
+    position: relative;
+    width: 90%;
+    height: 10%;
+    justify-content:end;
+}
+#seccion_cv a:link, a:visited{
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+    color: var(--c1);
+    font-family: var(--l2);
+    font-size: 22px;
+    transition: all .5s;
+}
+.linea_hover{
+    z-index: -1;
+    position: absolute;
+    border-radius: 5px;
+    width: 0;
+    height: 105%;
+    background-color: var(--c1);
+    transition: all .5s;
+}
+#seccion_cv a:hover{
+    color: #fff;
+}
+#seccion_cv a:hover > div{
+    width: 105%;
+}
+#seccion_presentacion{
+    width: 100%;
+    height: 90%;
+    flex-direction: column;
+}
+#img_foto{
+    border-radius: 50%;
+    width: 150px;
+}
+#text_nombre{
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+    font-weight: bolder;
+    font-family: var(--l2);
+    text-shadow: 0 0 5px var(--c1), 0 0 15px var(--c1), 
+    0 0 25px var(--c1), 0 0 35px var(--c1);
+}
+#text_profesion{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--c1);
+    margin-top: 10px;
+    border-bottom: 3px solid var(--c1);
+}
+#text_presentacion{
+    margin: 5px 150px ;
+    font-size: 12px;
+}
+
+/*pagina sobre mi*/
+#pagina_sobre_mi{
+    text-align: center;
+    margin: 50px 0;
+    width: 98vw;
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+    justify-items: center;
+    background-position: bottom;
+    background-size: cover;
+    transition: all .5s;
+}
+#imgs{
+    position: relative;
+    width: 99.5%;
+    height: 100%;
+    overflow: hidden;
+}
+#carrete_imgs{
+    background-color: #000;
+    position: relative;
+    width: 400%;
+    height: 100%;
+    transition: all 1s;
+}
+#carrete_imgs > img{
+    opacity: .7;
+    position: relative;
+    object-fit: cover;
+}
+#txt_sobre_mi{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#titulo_sobre_mi{
+    margin: 5% 0;
+    font-size: 50px;
+}
+.titulo_slide{
+    transform: scale(0,0);
+    margin: 25% 0;
+    position: absolute;
+    font-family: var(--l2);
+    font-size: 80px;
+    text-shadow: 5px 5px 1px var(--c1);
+    transition: all 1s;
+}
+#tit_slide1{
+    transform: scale(1,1);
+}
+#btns_sliders{
+    margin: 10% 0;
+    font-size: 12px;
+    width: 200px;
+    height: auto;
+    justify-content: space-between;
+}
+#btns_sliders > div{
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255,.5);
+    border-radius: 50%;
+    transition: all .5s;
+}
+#btns_sliders > div:hover{
+    background-color: var(--c1);
+}
+
+/*pagina de proyectos*/
+#pagina_proyectos{
+    margin: 100px 0;
+    width: 98vw;
+    flex-direction: column;
+    justify-content: start;
+}
+#tit_pag_proyectos{
+    margin: 20px 0;
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 0 0 5px var(--c1), 0 0 15px var(--c1), 
+    0 0 25px var(--c1), 0 0 35px var(--c1);
+}
+#grp_proyectos{
+    width: 100%;
+    height: auto;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+.proyecto{
+    position: relative;
+    cursor: pointer;
+    margin: 20px 5px;
+    width: 200px;
+    height: 150px;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+.proyecto:nth-child(1){
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Fproyecto1.png?alt=media&token=99baddf7-3cdc-4766-9f0d-25d90335e3b2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.proyecto:nth-child(2){
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Fproyecto2.jpg?alt=media&token=a5cb4436-e79f-4920-8c5b-6c13156e5263);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.proyecto:nth-child(3){
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Fproyecto3.jpg?alt=media&token=0913c921-6300-4d9a-8049-bdeab7b69a78);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btns_proyecto{
+    width: 100%;
+    height: 100%;
+    bottom: 100%;
+    position: absolute;
+    flex-direction: column;
+    transition: all .5s;
+    background-color: rgba(0, 0, 0,.5);
+}
+.proyecto:hover .btns_proyecto{
+    bottom: 0;
+}
+.btn_codigo,.btn_pagina{
+    margin: 5px;
+    border: 1px solid var(--c1);
+    border-radius: 5px;
+    padding: 0 5px;
+    color: var(--c1);
+    transition: all .5s;
+}
+
+.btn_codigo:hover,.btn_pagina:hover{
+    background-color: var(--c1);
+    color: #fff;
+}
+
+/*pagina de cursos*/
+#pagina_cursos{
+    margin: 50px 0;
+    width: 98vw;
+    height: auto;
+    flex-direction: column;
+    justify-content: start;
+}
+#tit_cursos, #tit_skills{
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 0 0 5px var(--c1), 0 0 15px var(--c1), 
+    0 0 25px var(--c1), 0 0 35px var(--c1);
+}
+#pag_cursos{
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.curso{
+    cursor: pointer;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px 20px;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: start;
+    overflow: hidden;
+}
+.tit_curso{
+    top: 50%;
+    border-bottom: 2px solid var(--c1);
+    width: 150px;
+    position: absolute;
+    z-index: 5;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+}
+.curso > img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: all .5s;
+}
+.btn_pdf{
+    background-color: rgba(0, 0, 0,.3);
+    top: 100%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: end;
+    transition: all .5s;
+}
+.btn_pdf > a:link, a:visited{
+    color: var(--c1);
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    text-decoration: none;
+    border: 1.5px solid var(--c1);
+    border-radius: 5px;
+    transition: all .5s;
+}
+.btn_pdf >a:hover{
+    color: #fff;
+    background-color: var(--c1);
+}
+.curso:hover .btn_pdf{
+    top: 0;
+}
+.curso:hover >img{
+    transform: scale(1.2,1.2);
+}
+#skills{
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.skill{
+    width: 80px;
+    height: 80px;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.skill > img{
+    width: 60px;
+    height: 60px;
+}
+.tit_skill{
+    text-align: center;
+    padding: 0 15px;
+    background-color: var(--c1);
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 10px;
+}
+
+/*pagina de servicios*/
+#pagina_servicios{
+    flex-direction: column;
+    margin: 50px 0;
+    width: 98vw;
+    height: auto;
+}
+#tit_servicios{
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 0 0 5px var(--c1), 0 0 15px var(--c1), 
+    0 0 25px var(--c1), 0 0 35px var(--c1);
+}
+#grp_servicios{
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+}
+.servicio{
+    margin: 20px 0;
+    border: 1.5px solid var(--c1);
+    border-radius: 5px;
+    width: 180px;
+    height: 180px;
+    transition: all .5s;
+}
+.servicio:hover > .txt_servicio{
+    background-color: rgba(0, 0, 0,.5);
+}
+.servicio:nth-child(1){
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2FDev_Web.jpg?alt=media&token=33b67edd-c708-4727-99eb-959b3b82cee2);
+    background-position: center;
+    background-size: cover;
+}
+.servicio:nth-child(2){
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2FDev_Web2.jpg?alt=media&token=9b078101-bde1-4a61-b902-d59bb57f18a6);
+    background-position: center;
+    background-size: cover;
+}
+.servicio:nth-child(3){
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2FDev_SPV.jpg?alt=media&token=518d7087-451c-42d1-b2f7-3258caba17fe);
+    background-position: center;
+    background-size: cover;
+}
+.servicio:nth-child(4){
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2FDev_Logos.jpg?alt=media&token=c27d54c9-ff21-42de-82cd-350547d4d701);
+    background-position: center;
+    background-size: cover;
+}
+.txt_servicio{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    transition: all .5s;
+}
+
+/*pagina de contato*/
+#pagina_contacto{
+    width: 98vw;
+    height: 100vh;
+    flex-direction: column;
+}
+#tit_contacto{
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 0 0 5px var(--c1), 0 0 15px var(--c1), 
+    0 0 25px var(--c1), 0 0 35px var(--c1);
+}
+#foto_contacto{
+    z-index: 5;
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: all .5s;
+}
+#foto_contacto:hover{
+    transform: scale(1.15,1.15);
+}
+#btns_contacto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+.btn_contacto{
+    position: absolute;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+}
+.btn_contacto > img{
+    width: 35px;
+    height: 35px;
+}
+#btn_what{
+    bottom: 105px;
+}
+#btn_face{
+    left: 105px;
+    transition-delay: .5s;
+}
+#btn_git{
+    right: 105px;
+    transition-delay: 1.5s;
+}
+#btn_mail{
+    top: 105px;
+    transition-delay: 1s;
+}
+
+/*pantalla a 500px*/
+@media screen and (max-width:500px) {
+    #menu{
+        transform: scale(0,0);
+    }
+    #pagina_principal{
+        text-align: center;
+        height: auto;
+    }
+    #text_presentacion{
+        text-align: justify;
+    }
+    #seccion_cv{
+        margin-top:25px;
+    }
+    #text_presentacion{
+        margin: 5px 20px ;
+        font-size: 12px;
+    }
+    #titulo_sobre_mi{
+        margin: 5% 0;
+        font-size: 30px;
+    }
+    .titulo_slide{
+        margin: 30% 0;
+    }
+    .btns_proyecto{
+        bottom: 0;
+        background-color: rgba(0, 0, 0,.3);
+    }
+    #grp_servicios{
+        justify-content: center;
+        align-items: center;
+    }
+    .txt_servicio{
+        background-color: rgba(0, 0, 0,.5);
+    }
+
+}
+@media screen and (max-width:300px) {
+    #btns_contacto{
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+    #text_nombre{
+        font-size: 60px;
+    }
+    .titulo_slide{
+        margin: 100% 0;
+        font-size: 35px;
+    }
+    #btns_sliders{
+        width: 100px;
+    }
+    #tit_pag_proyectos{
+        font-size: 35px;
+    }
+    #pagina_proyectos,#grp_proyecto{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #tit_cursos, #tit_skills{
+        font-size: 38px;
+    }
+    #tit_servicios{
+        font-size: 35px;
+    }
+    #tit_contacto{
+        font-size: 35px;
+    }
+}

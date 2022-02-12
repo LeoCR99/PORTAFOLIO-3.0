@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.js"></script>
+    <link rel="icon" href="imagenes/icono_pagina.png">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Portafolio</title>
+</head>
+
+<body class="estilo_fondo caja">
+
+    <!--MENU DE NAVEGACION-->
+    <nav id="menu" class="caja">
+        <img id="img_icono" src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Ficono_pagina.png?alt=media&token=b397b885-56dc-4087-8cbd-f86f46a414ee" alt="">
+        <a id="home" class="caja" href="#pagina_principal"><i class="bi bi-house-fill"></i><span
+                class="nom_btn">Home</span></a>
+        <a id="sobre_mi" class="caja" href="#pagina_sobre_mi"><i class="bi bi-file-person-fill"></i><span
+                class="nom_btn">Yo</span></a>
+        <a id="proyects" class="caja" href="#pagina_proyectos"><i class="bi bi-folder-fill"></i><span
+                class="nom_btn">Proyectos</span></a>
+        <a id="cursos" class="caja" href="#pagina_cursos"><i class="bi bi-mortarboard-fill"></i><span
+                class="nom_btn">Skills</span></a>
+        <a id="servicios" class="caja" href="#pagina_servicios"><i class="bi bi-lightbulb-fill"></i><span
+                class="nom_btn">Servicios</span></a>
+        <a id="contacto" class="caja" href="#pagina_contacto"><i class="bi bi-chat-dots-fill"></i><span
+                class="nom_btn">Contacto</span></a>
+    </nav>
+
+    <!--PAGINA PRINCIPAL HOME-->
+    <div id="pagina_principal" class="caja">
+        <div id="seccion_cv" class="caja">
+            <a href="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/CV-LEO-FEB-22.pdf?alt=media&token=4c599cec-95f6-4ade-a013-db96c8a5e58f" target="_blanck" id="btn_cv" class="caja">Descargar CV <i class="bi bi-file-earmark-pdf-fill"></i>
+                <div class="linea_hover"></div>
+            </a>
+        </div>
+        <div id="seccion_presentacion" class="caja">
+
+            <span id="text_nombre">¡Hola soy Leonardo!</span>
+            <img id="img_foto" src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Ffoto.png?alt=media&token=b3792ca4-6409-47e2-991e-d68f5a5e40be" alt="Fotografia de Leonardo">
+            <span id="text_profesion">Desarrollador FrontEnd</span>
+            <p id="text_presentacion">Soy apasionado del mundo de la tecnología y
+                el diseño del mismo, soy una persona autodidacta y amante del aprendizaje.
+                Me encanta ayudar a pequeñas empresas y emprendedores a innovar su negocio
+                en el mundo del internet y la automatización del mismo; me considero
+                desarrollador FrontEnd Jr ya que aún tengo un largo camino de aprendizaje.</p>
+        </div>
+    </div>
+
+    <!--pagina sobre mi-->
+    <div id="pagina_sobre_mi" class="caja">
+        <div id="imgs">
+            <div id="carrete_imgs" class="caja">
+                <img id="img1" src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Ffondo_slide_1.jpg?alt=media&token=a2e6812d-a08e-43f9-af56-6bec87a497fc" alt="">
+                <img id="img2" src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Ffondo_slide_2.jpg?alt=media&token=a3117d5d-9fb6-4d34-835c-173477b2fd03" alt="">
+                <img id="img3" src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Ffondo_slide_3.jpg?alt=media&token=0bf52a44-b2da-4877-9059-07e0b903dd9b" alt="">
+                <img id="img4" src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Ffondo_slide_4.jpg?alt=media&token=0bf5a258-44b0-43ab-b8e4-f134e3ee1fe4" alt="">
+            </div>
+        </div>
+        <div id="txt_sobre_mi" class="caja">
+            <span id="titulo_sobre_mi">¡Tengo otras pasiones!</span>
+            <span id="tit_slide1" class="titulo_slide">MOTOCICLISMO</span>
+            <span id="tit_slide2" class="titulo_slide">FRONTON</span>
+            <span id="tit_slide3" class="titulo_slide">COCINA</span>
+            <span id="tit_slide4" class="titulo_slide">MUSICA</span>
+            <nav id="btns_sliders" class="caja">
+                <div id="btn_slide1"></div>
+                <div id="btn_slide2"></div>
+                <div id="btn_slide3"></div>
+                <div id="btn_slide4"></div>
+            </nav>
+        </div>
+    </div>
+
+    <!--pagina proyectos-->
+    <div id="pagina_proyectos" class="caja">
+        <span id="tit_pag_proyectos">Proyectos</span>
+        <div id="grp_proyectos" class="caja">
+            <div class="proyecto caja">
+                <div class="btns_proyecto caja">
+                    <a href="https://github.com/LeoCR99/Portafolio-Version-2.0" class="btn_codigo" target="_blanck">Codigo</a>
+                </div>
+            </div>
+            <div class="proyecto caja">
+                <div class="btns_proyecto caja">
+                    <a href="https://github.com/LeoCR99/PORTAFOLIO-3.0" class="btn_codigo" target="_blanck">Codigo</a>
+                </div>
+            </div>
+            <div class="proyecto caja">
+                <div class="btns_proyecto caja">
+                    <a href="https://github.com/LeoCR99/GoodCode" class="btn_codigo" target="_blanck">Codigo</a>
+                    <a href="https://goodcode-748cb.web.app/" class="btn_pagina" target="_blanck">Visitar</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--pagina cursos-->
+    <div id="pagina_cursos" class="caja">
+        <span id="tit_cursos">Cursos</span>
+
+        <div id="pag_cursos" class="caja">
+
+            <div class="curso caja">
+                <span class="tit_curso">Curso de JavaScript</span>
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Fudemy.png?alt=media&token=3d568a2e-fc60-44ea-8cd4-4c851fef0414" alt="">
+                <div class="btn_pdf caja">
+                    <a href="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/CURSO_JS.pdf?alt=media&token=cb0840ca-57df-4d58-bc5b-ac05dc6fd718" target="_blanck">Ver</a>
+                </div>
+            </div>
+
+            <div class="curso caja">
+                <span class="tit_curso">Curso de CSS</span>
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Fudemy.png?alt=media&token=3d568a2e-fc60-44ea-8cd4-4c851fef0414" alt="">
+                <div class="btn_pdf caja">
+                    <a href="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/CURSO_CSS.pdf?alt=media&token=dc4678ce-b768-45dd-8e31-daaca349c973" target="_blanck">Ver</a>
+                </div>
+            </div>
+
+            <div class="curso caja">
+                <span class="tit_curso">Curso de Base de Datos</span>
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2FCapacitate-para-el-Empleo.jpg?alt=media&token=e2685ed5-fdd8-4c93-b391-1789217f4c45" alt="">
+                <div class="btn_pdf caja">
+                    <a href="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/CURSO_BS.pdf?alt=media&token=d9845d45-0b77-4ba4-bbc6-f080bdc4d234" target="_blanck">Ver</a>
+                </div>
+            </div>
+
+            <div class="curso caja">
+                <span class="tit_curso">Curso de HTML</span>
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Fudemy.png?alt=media&token=3d568a2e-fc60-44ea-8cd4-4c851fef0414" alt="">
+                <div class="btn_pdf caja">
+                    <a href="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/CURSO_HTML.pdf?alt=media&token=d6f750db-cefc-4405-a193-3702d258fec2" target="_blanck">Ver</a>
+                </div>
+            </div>
+
+            <div class="curso caja">
+                <span class="tit_curso">Certificado de Power Point</span>
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Fsep.png?alt=media&token=35628ec5-d3ba-4e62-bc87-b74b77cea16c" alt="">
+                <div class="btn_pdf caja">
+                    <a href="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/Certificados.pdf?alt=media&token=5117afe9-ca7c-44ca-92d8-18d912a857be" target="_blanck">Ver</a>
+                </div>
+            </div>
+
+            <div class="curso caja">
+                <span class="tit_curso">Certificado de Microsoft Word</span>
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Fsep.png?alt=media&token=35628ec5-d3ba-4e62-bc87-b74b77cea16c" alt="">
+                <div class="btn_pdf caja">
+                    <a href="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/Certificados.pdf?alt=media&token=5117afe9-ca7c-44ca-92d8-18d912a857be" target="_blanck">Ver</a>
+                </div>
+            </div>
+        </div>
+
+        <span id="tit_skills">Skills</span>
+
+        <div id="skills" class="caja">
+
+            <div class="skill caja">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Flogo_html.png?alt=media&token=336c2363-2838-48ac-be9e-83ffbba29644" alt="">
+                <span class="tit_skill">HTML</span>
+            </div>
+
+            <div class="skill caja">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Flogo_css.png?alt=media&token=56b48435-4ba4-4fea-912b-d39afa33e99e" alt="">
+                <span class="tit_skill">CSS</span>
+            </div>
+
+            <div class="skill caja">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Flogo_js.png?alt=media&token=e0e5db2b-c996-479a-9dbd-50db3df7b12a" alt="">
+                <span class="tit_skill">Java Script</span>
+            </div>
+
+            <div class="skill caja">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Flogo_jquery.png?alt=media&token=e0d2ec0c-13f9-48c5-b03e-0145a582121b" alt="">
+                <span class="tit_skill">JQuery</span>
+            </div>
+
+            <div class="skill caja">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Flogo_git.png?alt=media&token=7d3dddb9-b212-4da3-81f0-498a81fbc900" alt="">
+                <span class="tit_skill">Git</span>
+            </div>
+
+            <div class="skill caja">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Flogo_java.png?alt=media&token=138a2c43-7286-43b3-b2ef-1a31fa2f38b6" alt="">
+                <span class="tit_skill">Java</span>
+            </div>
+
+            <div class="skill caja">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Flogo_python.png?alt=media&token=e3392af0-d481-4983-970f-73609e083a8c" alt="">
+                <span class="tit_skill">Python</span>
+            </div>
+
+            <div class="skill caja">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Flogo_photo.png?alt=media&token=32af08dc-575f-4874-a0a6-1959685dfbea" alt="">
+                <span class="tit_skill">Photoshop</span>
+            </div>
+
+            <div class="skill caja">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Flogo_illus.png?alt=media&token=c4d81c99-73ee-449e-9364-675723b3c92a" alt="">
+                <span class="tit_skill">Illustrator</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--pagina servicios-->
+    <div id="pagina_servicios" class="caja">
+        <span id="tit_servicios">Servicios</span>
+        <di id="grp_servicios" class="caja">
+            <div class="servicio caja">
+                <span class="txt_servicio">Desarrollo de Paginas Web</span>
+            </div>
+            <div class="servicio caja">
+                <span class="txt_servicio">Desarrollo de Aplicaciones Web</span>
+            </div>
+            <div class="servicio caja">
+                <span class="txt_servicio">Desarrollo de Puntos de Venta</span>
+            </div>
+            <div class="servicio caja">
+                <span class="txt_servicio">Desarrollo de Logotipos</span>
+            </div>
+    </div>
+
+    <!--pagina contacto-->
+    <div id="pagina_contacto" class="caja">
+        <span id="tit_contacto">Contacto</span>
+        <div id="btns_contacto" class="caja">
+            <img id="foto_contacto" src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Ficono_pagina.png?alt=media&token=b397b885-56dc-4087-8cbd-f86f46a414ee" alt="">
+            <a id="btn_what" class="btn_contacto caja" href="https://wa.link/3h89be" target="_blanck"><img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Flogo_whatssap.png?alt=media&token=167a3562-b9cb-4091-859c-abbc94d3b25a" alt=""></a>
+            <a id="btn_face" class="btn_contacto caja" href="https://www.facebook.com/leonardo.carreon.7547" target="_blanck"><img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Flogo_facebook.png?alt=media&token=b6600ffd-d13c-4c1f-80f6-3bd74ef064b3" alt=""></a>
+            <a id="btn_git" class="btn_contacto caja" href="https://github.com/LeoCR99" target="_blanck"><img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Flogo_github.png?alt=media&token=8022b1ac-b933-4bc5-9805-fba94a04c811" alt=""></a>
+            <a id="btn_mail" class="btn_contacto caja" href="mailto:lcr2020isi@gmail.com" target="_blanck"><img src="https://firebasestorage.googleapis.com/v0/b/mi-portafolio-4b23c.appspot.com/o/IMAGENES%2Flogo_correo.png?alt=media&token=6b4839b7-b563-422e-a1fa-665ee6c75dc0" alt=""></a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
